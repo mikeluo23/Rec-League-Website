@@ -1,0 +1,224 @@
+# Division scraper config.
+# Fill this in with the official calendar/standings links and the team lists
+# for each division you want to support.
+#
+# Notes:
+# - Keep `id` stable once we start using it in the app/API.
+# - Put the official TDL team spelling in `canonical_name`.
+# - Add any alternate spellings seen in box scores under `aliases`.
+# - Leave unknown values as "" for now.
+
+project:
+  season: 2026
+  player_identity_scope: season_division_name
+  notes:
+    - "Temporary player identity assumption: normalized name is unique within a season+division."
+    - "If two players share a name in one division, we will need a stronger player key."
+
+divisions:
+  - id: d3_mondays
+    label: "3rd Division Mondays"
+    short_label: "D3 Mondays"
+    calendar_url: "https://tdlbasketball.com/calendar/3rd-division-mondays/"
+    standings_url: ""
+    teams_page_url: ""
+    leaders_url: ""
+    active: true
+    notes:
+      - "Current production division."
+      - "Fill in aliases if box scores use alternate spellings."
+    teams:
+      - canonical_name: "BKYSC"
+        aliases: []
+      - canonical_name: "Manhattan Elite"
+        aliases: []
+      - canonical_name: "Texas Elite"
+        aliases: []
+      - canonical_name: "Pippen Ain't Easy"
+        aliases: []
+      - canonical_name: "Smooth Buckets"
+        aliases: []
+      - canonical_name: "Ibaka Flaka Flame"
+        aliases: []
+      - canonical_name: "Brickstone Associates"
+        aliases: []
+      - canonical_name: "Manhattan Mayo Clinic"
+        aliases: []
+      - canonical_name: "NJ Rockets"
+        aliases: []
+
+  - id: d3_tuesdays
+    label: "3rd Division Tuesdays"
+    short_label: "D3 Tuesdays"
+    calendar_url: "https://tdlbasketball.com/calendar/3rd-division-tuesdays/"
+    standings_url: "https://tdlbasketball.com/table/standings-3rd-division-tuesdays/"
+    teams_page_url: ""
+    leaders_url: "https://tdlbasketball.com/player-stats-3rd-division-tuesdays/"
+    active: true
+    notes:
+      - "Current production division."
+      - "Fill in aliases if box scores use alternate spellings."
+    teams:
+      - canonical_name: "Spark Plugs"
+        aliases: []
+      - canonical_name: "Meat Ball Club"
+        aliases: []
+      - canonical_name: "Scrub Daddies"
+        aliases: []
+      - canonical_name: "JP Junior Varsity"
+        aliases: []
+      - canonical_name: "Spaghetti Ramen"
+        aliases: []
+      - canonical_name: "Bicoastal Baddies"
+        aliases: []
+      - canonical_name: "GGininder"
+        aliases: []
+      - canonical_name: "Reservoir Dogs"
+        aliases: []
+      - canonical_name: "Smash N Bounce"
+        aliases: []
+
+  - id: d2_sundays
+    label: "2nd Division Sundays"
+    short_label: "D2 Sundays"
+    calendar_url: "https://tdlbasketball.com/calendar/2nd-division-sundays/"
+    standings_url: "https://tdlbasketball.com/table/standings-2nd-division-sundays/"
+    teams_page_url: ""
+    leaders_url: "https://tdlbasketball.com/player-stats-2nd-division-sundays/"
+    active: true
+    notes:
+      - "Current production division."
+      - "Fill in aliases if box scores use alternate spellings."
+    teams:
+      - canonical_name: "Big Bullies"
+        aliases: []
+      - canonical_name: "Rush Hour"
+        aliases: []
+      - canonical_name: "Injustice League"
+        aliases: []
+      - canonical_name: "YOLO"
+        aliases: []
+      - canonical_name: "Infinite Potential"
+        aliases: []
+      - canonical_name: "Layups Only (D2)"
+        aliases:
+          - "Layups Only"
+      - canonical_name: "Hoop Prophets"
+        aliases: []
+      - canonical_name: "Arc Angels"
+        aliases: []
+      - canonical_name: "BucketBoys"
+        aliases: []
+
+  - id: d3_sundays
+    label: "3rd Division Sundays"
+    short_label: "D3 Sundays"
+    calendar_url: "https://tdlbasketball.com/calendar/3rd-division-sundays/"
+    standings_url: "https://tdlbasketball.com/table/standings-3rd-division-sundays/"
+    teams_page_url: ""
+    leaders_url: "https://tdlbasketball.com/player-stats-3rd-division-sundays/"
+    active: true
+    notes:
+      - "Current production division."
+      - "Fill in aliases if box scores use alternate spellings."
+    teams:
+      - canonical_name: "Cone Drill 2.0"
+        aliases: []
+      - canonical_name: "Supreme Team"
+        aliases: []
+      - canonical_name: "The Big Ragus"
+        aliases: []
+      - canonical_name: "Seawolves"
+        aliases: []
+      - canonical_name: "Part Time Goats"
+        aliases: []
+      - canonical_name: "Team Sky"
+        aliases: []
+      - canonical_name: "Jamie's Jammers"
+        aliases:
+          - "Jamie’s Jammers"
+      - canonical_name: "Ball Is Life"
+        aliases: []
+      - canonical_name: "Brick Squad"
+        aliases: []
+      - canonical_name: "Big Song Lil Wong"
+        aliases: []
+      - canonical_name: "Sunday Sauce"
+        aliases: []
+      - canonical_name: "Big Bullies (D3)"
+        aliases:
+          - "Big Bullies"
+      - canonical_name: "Ice In My Veins"
+        aliases: []
+      - canonical_name: "True Step PT"
+        aliases: []
+
+  - id: premier_wednesdays
+    label: "Premier Division"
+    short_label: "Premier"
+    calendar_url: "https://tdlbasketball.com/calendar/premier-division-wednesdays/"
+    standings_url: "https://tdlbasketball.com/table/standings-1st-division-wednesdays/"
+    teams_page_url: ""
+    leaders_url: "https://tdlbasketball.com/player-stats-1st-division-wednesdays/"
+    active: true
+    notes:
+      - "Current production division."
+      - "Fill in aliases if box scores use alternate spellings."
+    teams:
+      - canonical_name: "Overtime"
+        aliases: []
+      - canonical_name: "Ratpack"
+        aliases:
+          - "Ratpack (P)"
+      - canonical_name: "Expensive League"
+        aliases:
+          - "Expensive League (P)"
+      - canonical_name: "Swish House"
+        aliases:
+          - "Swish House (P)"
+      - canonical_name: "Hoop Fuel Nutrition"
+        aliases:
+          - "Hoop Fuel Nutrition (P)"
+      - canonical_name: "@GoodRun.app"
+        aliases:
+          - "@GoodRun.app (P)"
+      - canonical_name: "Five Borough Boys"
+        aliases:
+          - "Five Borough Boys (P)"
+      - canonical_name: "The Deep End"
+        aliases:
+          - "The Deep End (P)"
+      - canonical_name: "The Triads"
+        aliases:
+          - "The Triads (P)"
+
+  - id: d2_thursdays
+    label: "2nd Division Thursdays"
+    short_label: "D2 Thursdays"
+    calendar_url: "https://tdlbasketball.com/calendar/2nd-division-thursdays/"
+    standings_url: "https://tdlbasketball.com/table/standings-2nd-division-thursdays/"
+    teams_page_url: ""
+    leaders_url: "https://tdlbasketball.com/player-stats-2nd-division-thursdays/"
+    active: true
+    notes:
+      - "Current production division."
+      - "Fill in aliases if box scores use alternate spellings."
+    teams:
+      - canonical_name: "Chess Not Checkers"
+        aliases: []
+      - canonical_name: "NY Rockits"
+        aliases: []
+      - canonical_name: "New Gotham"
+        aliases: []
+      - canonical_name: "Mr. Beast"
+        aliases: []
+      - canonical_name: "Shiesty Squad"
+        aliases: []
+      - canonical_name: "SNB"
+        aliases: []
+      - canonical_name: "Hoya Redemption"
+        aliases: []
+      - canonical_name: "Dream"
+        aliases: []
+      - canonical_name: "Honey Badgers"
+        aliases: []
